@@ -63,7 +63,8 @@ regular basis and that is usually how I generate great ideas for my videos. 
 
  
 
-**Media:** Some of my videos from my YouTube Channel.
+**Media:** Some of my videos from my YouTube Channel. Banner-style image
+at:<http://adriandatte.com/resources/banner01.jpg>
 
  
 
