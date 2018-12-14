@@ -9,10 +9,35 @@
  */
 
 html {
+  font-family: "Lucida Sans", sans-serif;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+.navbar button {
+  background-color: rgb(65, 0, 82);
+  border: 1px solid rgb(177, 0, 201);
+  color: white;
+  padding: .1px 1px;
+  cursor: pointer;
+  float: left;
+}
+
+/* Clear floats (clearfix hack) */
+.navbar:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navbar button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.navbar button:hover {
+  background-color: #175019;
+}
 /* Sections
    ========================================================================== */
 
@@ -20,34 +45,66 @@ html {
  * Remove the margin in all browsers.
  */
 
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 body {
   background-color: rgb(212, 96, 0);
   margin: 0;
 }
 
 .byadriandatte {
+  color: white;
   font-size: 3em;
   font-weight: bold;
-  margin: .25em .5em;
+  text-align: center;
+  margin: .25em;
+  padding: .1em;
 }
-
+/*Adjusts the size of the image displayed across the top of every page.*/
+.banner, img {
+  width: 100%
+}
+/*A brief description of myself below.*/
 .quickbio {
   align-self: center;
   background-color: lightgrey;
   border: 10px solid rgb(33, 2, 41);
   border-radius: 10px;
   font-size: 1.5em;
-  width: 1000px;
+  width: 100%;
+  max-width: 80%;
   padding: 25px;
   margin: 0 auto;
 }
 
+.contact {
+  align-self: center;
+  background-color: lightgrey;
+  border: 10px solid rgb(33, 2, 41);
+  border-radius: 10px;
+  font-size: 1.5em;
+  width: 100%;
+  max-width: 80%;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+/*The "Welcome" text at the top of the page.*/
 .welcome {
+  color: white;
   font-size: 2em;
-  margin: 1em .25em;
-  padding: .1em .5em;
+  margin: .25em;
+  padding: .1em;
   position: relative;
-  top: .75em;
+  top: 0em;
 }
 
 /**
@@ -62,7 +119,8 @@ h1 {
 }
 
 h2 {
-  margin: .5em .5em
+  margin: .5em;
+  text-align: center;
 }
 
 h3 {
@@ -72,34 +130,18 @@ h3 {
   width: 100%;
 }
 
-.portfolio, iframe {
-  width: 1120px;
-  height: 630px;
-  margin: 0 auto;
-  background-color: #777;
+.videowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
 }
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .legal {
@@ -107,6 +149,15 @@ h3 {
   margin: 1em auto;
   width: 10em;
 }
+
+.green {
+  color: rgb(0, 255, 0);
+}
+
+.blue {
+  color: rgb(0, 0, 209);
+}
+
 /* Grouping content
    ========================================================================== */
 
