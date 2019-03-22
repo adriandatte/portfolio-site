@@ -72,5 +72,3 @@ Personal Contact:
 -----------------
 
 Email: sunbut1\@yahoo.com
-
-Phone: 570-516-7897
